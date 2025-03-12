@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.P-text {
+    color:rgb(214, 195, 190);
+}
+
+/* .container {
+    
+    max-width: 1100px;
+    margin: auto;
+} */
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+header {
+    
+   position: relative;
+  
+   
+}
+
+
+#navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#navbar h1  {
+    color:#da5e43;
+    width: 80px;
+    margin-right: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+  #navbar ul li a{
+    padding: 15px 20px;
+    color:#da5e43;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  #navbar ul li a .bt-link{
+    padding: 15px 20px;
+    color:#da5e43;
+    font-weight: 60;
+    margin-top: 20px;
+  }
+  
+
+
+
+#navbar ul li a:hover{
+    border-bottom: 2px solid rgb(234, 124, 84);
+}
+#navbar ul a:hover{
+    color: #e2e2e2;
+}
+
+/* styles.css */
+.container {
+  
+ 
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+ float: right;
+  margin: 0 auto;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  color:rgb(215, 108, 69);
+}
+
+/* styles.css */
+.quantity {
+  display: flex;
+  
+  
+}
+
+.cart-button {
+  background-color:rgb(234, 124, 84);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.categories span {
+  color: black;
+ 
+}
+
+
+.left{
+  width: 250px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* float: left; */
+  margin-bottom: 20px
+}
+.image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 180px;
+  /* float: left; */
+  margin: 0 10px;
+  display: flex;
+}
+.image-container{
+  text-align: center;
+    padding: 20px;
+}
+
+
+.footer {
+  background-color: #343a40;
+  margin-bottom: 500px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  
+  
+}
+
+
+
+

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>LAMOROSON RESTAURANT</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            
+            <h1 class="header">LAMOROSON</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="bt-link">HOME</a></li>
+                    <li><a href="#about" class="bt-link">ABOUT</a></li>
+                    <li><a href="#offers"class="bt-link">OFFERS</a></li>
+                    <li><a href="#menu"class="bt-link">MENU</a></li>
+                    <li><a href="#contact " class="bt-link">CONTACT US</a></li>
+                    
+                    
+                    
+                    
+                </ul>
+                
+
+            </nav>
+            
+
+        </div>
+
+        <div class="content">
+            <h1>Welocome To <span class="high">LAMOROSON</span> Restaurant</h1>
+            <p><B>Here you can find Most delicies food with offers</B></p>
+            <a href="login.html" class="btn btn-primary">Book a Table</a>
+            
+            
+        </div>
+        
+
+    </header>
+
+
+    <!--about start-->
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="title">
+                    <h2>The Food Lover History</h2>
+                    <p>More than 25+ years of experience</p>
+                </div>
+                <div class="about-content">
+                    <div>
+                        <p>LAMOROSON Restaurant strives to source local, sustainable and organic when possible. We work hard to source premium ingrediants
+                             and we cook evrything from scratch with love. We also do our best to pay our employees living wages (tips are shared with all
+                              employees,including kitchen staff) and to reduce our environmental footprint wherever we can.
+                        </p>
+                        <p>
+                            overall, these factors translate 
+                            to higher menu prices, but we hope that you find value and feel a sense of comfort in knowing that we aim to get better evryday
+                            at going what is important to us. <br>
+                            <a href="#" class="btn btn-secondary">READ MORE</a>
+                        </p>
+                    </div>
+                    <img src="img/wp1874164.jpg" alt="Pizza">
+                    
+                </div>
+            </div>
+        </section>
+       
+
+    <!--about-->
+
+
+<!-- offer start -->
+<main>
+        
+    <section id="offers">
+     <div class="container"> 
+     
+     <div class="head">
+         <h2> our special offers </h2>
+     </div>
+     <div class="item">
+         <div>
+             <img src="img/pasta.png" alt="pasta">
+             
+             <div>
+                 <h3>Pasta</h3>
+                 <p><del>200 $</del> <span class="mon1"> 100 $</span></p>
+             </div>
+         </div>
+         
+         <div>
+             <img src="img/Vegertarian_Pasta.png" alt=" veg pasta">
+             <div>
+                 <h3> Vegertarian Pasta</h3>
+                 <p><del>220 $</del> <span class="mon1"> 110 $</span></p>
+             </div>
+         </div>
+         <div>
+             <img src="img/cheese_Pasta.png" alt=" chez pasta">
+             <div>
+                 <h3> cheese Pasta</h3>
+                 <p><del>250 $</del> <span class="mon1"> 150 $</span></p>
+             </div>
+         </div>
+             </div>
+         </div>
+         <a href="#menu" class=" btn btn-order">Order Now</a>
+     </div>
+     
+
+    </section>
+
+ </main>
+<!--offer end-->
+<div id="menu">
+    <div class="container">
+        <div class="begin">
+            <h2>our Special Menu</h2>
+            <p>Order two and get third for free</p>
+            
+        </div>
+        
+        <section>
+        <input type="text" id="search-bar" placeholder="Search...">
+<ul id="results"></ul>
+
+<script>
+// JavaScript Functionality
+const searchBar = document.getElementById('search-bar');
+const resultsContainer = document.getElementById('results');
+
+searchBar.addEventListener('input', function() {
+    const searchTerm = searchBar.value.toLowerCase();
+    // Clear previous results
+    resultsContainer.innerHTML = '';
+    // Filter through your data (an array, for example)
+    const filteredResults = dataArray.filter(item => item.title.toLowerCase().includes(searchTerm));
+    // Display filtered results
+    // filteredResults.forEach(result => {
+    //     const li = document.createElement('li');
+    //     li.textContent = result;
+    //     resultsContainer.appendChild(li);
+    // });
+    console.log (dataArray);
+});
+const dataArray = [
+        {
+            id: 0,
+            image: 'img/WhatsApp Image 2024-05-07 at 21.55.37_ff33cd69.jpg',
+            title: 'LASAL Cheeese',
+            price: 120,
+        },
+        {
+            id: 1,
+            image: 'img/WhatsApp Image 2024-05-07 at 21.48.51_171b0ed2.jpg',
+            title: 'Pasta Fettuccine',
+            price: 60,
+        },
+        {
+            id: 2,
+            image: 'img/cold-cereal.jpg',
+            title: 'cold cereal',
+            price: 230,
+        },
+        {
+            id: 3,
+            image: 'img/Berries.jpg',
+            title: 'berries',
+            price: 100,
+        },
+        {
+            id: 4,
+            image: 'img/WhatsApp Image 2024-05-07 at 21.50.48_e99400bb.jpg',
+            title: 'Rota',
+            price: 230,
+        },
+        {
+            id: 5,
+            image: 'img/mojito-cocktail-fresh-lime-mint-dark-background-109553462 (1).webp',
+            title: 'mojito',
+            price: 100,
+        },
+    ];
+
+
+
+
+
+// Example data array (you can replace it with your own data)
+
+</script>
+</section>
+        <!-- <a href="search.html" class="botton1">Search</a> -->
+        <!-- <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+           
+        </div>
+        
+        <div id="searchResults">
+            Search results will be displayed here -->
+        <!-- </div>
+        <script>
+            function search() {
+                // Get the value of the search input
+                var query = document.getElementById('searchInput').value;
+                
+                // You can perform your search operation here
+                // For demonstration, let's just display the search query in the searchResults div
+                document.getElementById('searchResults').innerHTML = "<p>You searched for: " + query + "</p>";
+            }
+        </script>  -->
+        
+        <div class="meitems">
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img src="img/WhatsApp Image 2024-05-07 at 21.55.37_ff33cd69.jpg" alt="LASAL cheese">
+                    <div class="con">
+                        <h3>LASAL Cheeese</h3>
+                        <p>cheese,tomato,Cheddar,olive  <span>70$</span></p>
+                        <!-- <div class="test">
+                            <a href="details.html">  <input type="submit" value="Details"></a>
+                            <input type="submit" value="Order Now">
+                        </div> -->
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="details.html" class="botton1">Details</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="pasfett" src="img/WhatsApp Image 2024-05-07 at 21.48.51_171b0ed2.jpg" alt="pasta fettuccine">
+                    <div class="con">
+                        <h3>Pasta Fettuccine</h3>
+                        <p>cheese,tomato,Cheddar,olive <span>75$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <section class="dessert">
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/cold-cereal.jpg" alt="cold cereal">
+                    <div class="con">
+                        <h3>cold cereal</h3>
+                        <p>some cereal , fruit,and milk  <span>350$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/Berries.jpg" alt="berries">
+                    <div class="con">
+                        <h3>berries</h3>
+                        <p>some of berries red and blue ,and sause from barries <span>65$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.50.48_e99400bb.jpg" alt="rota">
+                    <div class="con">
+                        <h3>Rota</h3>
+                        <p>Waffle with chocolate and biscuits <span>100$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+              </div>
+            </section>
+              <section>
+              <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/mojito-cocktail-fresh-lime-mint-dark-background-109553462 (1).webp" alt="rota">
+                    <div class="con">
+                        <h3>mojito</h3>
+                        <p>lemon,soda,sugar <span>30$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+              </div>
+              <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/85a79114642cd5bf94b31fd9c7d2a838.jpg" alt="rota">
+                    <div class="con">
+                        <h3>blueberry juice</h3>
+                        <p>blueberry ,sugar, surap<span>50$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+              </div>
+           </section>
+            <section class="chicken">
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img  class="im2" src="img/WhatsApp Image 2024-05-07 at 21.48.59_c252bde9.jpg" alt="Grilled chicken">
+                    <div class="con">
+                        <h3>Grilled Chicken</h3>
+                        <p>Grilled chicken,rice,Green salad <span>150$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+            
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.49.01_3c29d254.jpg" alt="meal">
+                    <div class="con">
+                        <h3>Chicken and rice meal</h3>
+                        <p>Grilled chicken,rice <span>120$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/ChickenMarsala.jpg" alt="chicken marsala">
+                    <div class="con">
+                        <h3>chicken masrala</h3>
+                        <p>chicken with marsala sause <span>200$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/FingerChicken.jpg" alt="finger chicken">
+                    <div class="con">
+                        <h3>finger chicken</h3>
+                        <p>finger of chicken ,and sause katchap <span>120$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+             <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.49.01_0ff61f7e.jpg" alt="meal2">
+                    <div class="con">
+                        <h3>lamaroson meal</h3>
+                        <p>Grilled chicken,rice,Ranch sauce, cheddar, lettuce and tomatoes <span>200$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+             </div>
+            </section>
+            <section class="burger">
+
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src= "img/WhatsApp Image 2024-05-07 at 21.48.54_cf28e0ae.jpg" alt="Burger">
+                    <div class="con">
+                        <h3>Burger</h3>
+                        <p>beef,Ranch sauce, cheddar, lettuce and tomatoes <span>120$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.49.01_36dc6238.jpg" alt="cheese Burger">
+                    <div class="con">
+                        <h3>cheese burger</h3>
+                        <p>beef, cheddar, lettuce and tomatoes <span>70$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.49.01_c8ef4a19.jpg" alt="smoke house ">
+
+                    <div class="con">
+                        <h3>smoke house</h3>
+                        <p>two of beef,Ranch sauce, cheddar, lettuce and tomatoes <span>250$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/WhatsApp Image 2024-05-07 at 21.49.01_53e9ffe9.jpg" alt="fire burger">
+                    <div class="con">
+                        <h3>fire Burger</h3>
+                        <p>hot spicy,Ranch sauce, cheddar, lettuce and tomatoes <span>80$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="meat">
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/BeefMeatSteak.jpg" alt="stack">
+                    <div class="con">
+                        <h3>steak</h3>
+                        <p>steak of meat ,sause barbiko <span>250$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/7.jpeg" alt="roast beef">
+                    <div class="con">
+                        <h3>roast beef</h3>
+                        <p>chuck roast,beef stock powder ,red wine <span>300$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/steak-dinner.jpg" alt="steak dinner">
+                    <div class="con">
+                        <h3> lamarason steak </h3>
+                        <p>steak,rice , special sause,,green pepper <span>350$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="meitemleft">
+                <div class="meitem">
+                    <img class="im2" src="img/th.jpeg" alt="spaghetti bolognese">
+                    <div class="con">
+                        <h3> spaghetti bolognese </h3>
+                        <p>spaghetti ,royco pasta sause ,beef onion ,tomato<span>270$</span></p>
+                        <a href="#" class="botton">Order Now</a>
+                        <a href="#" class="botton">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+    
+</div>
+<main>
+ 
+   
+         
+
+
+<!-- contact start -->
+<section id="contact">
+<h1 class="heading">Contact Us</h1>
+</div><div class="footer">
+<div class="footer-column"><img class="map-image" src="img/location.jpeg.jpg" /></div>
+<div class="footer-column">
+    <div class="tile-content">
+        <h1><b>Meet Us </b></h1>
+        <div class="contact-row">
+            <img src="img/phone (2).png" width="30px"><span class="tile-field">+466723723666</span>
+        </div>
+        <div class="contact-row">
+            <img src="img/at-sign.png"width="30px"><span class="tile-field">contact@admin.com</span>
+        </div>
+        <div class="contact-row">
+            <img src="img/location.png"width="30px"><span class="tile-field">1784 Griffin Street, Alabama</span>
+        </div>
+    </div>
+</div>
+<div class="footer-column contact-form-container">
+    <div class="tile-content">
+        <form method="POST">
+            <h1>Contact</h1>
+            <div class="contact-row">
+                <input type="text" class="form-field" placeholder="Name">
+            </div>
+            <div class="contact-row">
+                <textarea rows="5" class="form-field" placeholder="Message"></textarea>
+            </div>
+            <button class="button">Send</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- contact end -->
+
+<!-- footer start -->
+<footer class="footer-distributed">
+
+<div class="footer-left">
+
+  <h3>LAMAR<span>SON</span></h3>
+
+  <p class="footer-links">
+    <a href="#" class="link-1">Home</a>
+    
+    <a href="#">Blog</a>
+  
+    <a href="#">Pricing</a>
+  
+    <a href="#">About</a>
+    
+    <a href="#">Faq</a>
+    
+    <a href="#">Contact</a>
+  </p>
+
+  <p class="footer-company-name">Company Name © 2015</p>
+</div>
+
+<div class="footer-center">
+
+  <div>
+    <i class="fa fa-map-marker"></i>
+    <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+  </div>
+
+  <div>
+    <i class="fa fa-phone"></i>
+    <p>+1.555.555.5555</p>
+  </div>
+
+  <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:support@company.com">support@company.com</a></p>
+  </div>
+
+</div>
+
+<div class="footer-right">
+
+  <p class="footer-company-about">
+    <span>About the company</span>
+    LAMOROSON Restaurant strives to source local, sustainable and organic when possible. We work hard to source premium ingrediants
+     and we cook evrything from scratch with love.
+
+
+  <div class="footer-icons">
+
+     <img src="img/fa fa-facebook.png" alt="fa-facebook">
+     <img src="img/fa fa-linkedin.png" alt="fa-linkedin">
+     <img src="img/fa fa-twitter.png" alt="fa-twitter">
+    
+    
+
+  </div>
+
+</div>
+
+</footer>
+<!-- footer end -->
+
+</main>
+
+
+
+
+</body>
+</html>       
+
+    </main>
+    
+
+    
+
+</body>
+</html>

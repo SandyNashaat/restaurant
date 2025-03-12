@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/back_login.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+   
+}
+
+    
+.container{
+    width: 420px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left: 250px;
+    
+  
+}
+
+.container h1 {
+    font-size: 39px;
+    text-align: center;
+    color: #fffefd;
+    z-index: 2;
+}
+
+.container .input-box {
+    width: 100%;
+    height: 50px;
+   
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(4, 9, 4, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #050404;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label
+ {
+    top: -5px;
+ }
+
+
+.input-box input::placeholder {
+    color: #050404;
+}
+
+
+
+.container .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.container .remember-forgot:hover{
+color: #000;
+}
+
+.remember-forgot label input  {
+    color: #0d0a0a;
+    margin-right: 3px;
+}
+
+.remember-forgot a  {
+  
+    text-decoration: none;
+   
+}
+
+.remember-forgot a:hover{
+    color: #050404;
+
+}
+
+.container .btn {
+    width: 100%;
+    height: 40px;
+    background: rgb(216, 125, 91);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f6ef;
+    font-weight: 600;
+}
+.container.btn:hover{
+
+    color: aliceblue;
+}
+
+.btn:hover{
+   
+    color: #272219;
+}
+
+
+
+
+.container .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px ;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.remember-forgot{
+    font-size: .9em;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:#b8c119;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500px;
+}
+
+
+.register-link  {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    font-size: 500;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: #f2f6ef;
+}
+
+.botton{
+    position: relative;
+    right: 240px;
+    top: 80px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(216, 131, 95);
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
+    color: rgb(220, 215, 201);
+    }
+    .botton:hover{
+        color: #0d0a0a;
+        background-color: #e4d38f;
+    }
+    .details{
+        right: 60px;
+    }
+
+    .details p,h1{
+        color: #fdfff7;
+        font-size: 25px;
+        
+    }
+    .error {
+        color: red;
+      
+    }
+    
+
